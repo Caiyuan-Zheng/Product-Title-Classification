@@ -17,15 +17,15 @@ focal loss对应数据不均衡，数据不足可以通过在京东上爬取数�
 # 项目结构
 准备:我们是在google的colab上进行训练。可以从data文件google drive链接文件中获取数据集和预训练词向量，然后存放在你的项目的data文件夹中  
 
-(1)预处理：代码在预处理文件夹下。首先运行convert.py进行分词，再执行create_data.py将标题和标签转换为序列。你也可以考虑使用create_embedding.py生成词向量
-(2)分类模型:可以直接运行对应的模型文件。对于层次模型，你需要分别训练三个层次对应的模型，最后进行层次分类
-(3)爬虫:执行爬虫文件夹下面的try_colab.py就可以从京东上爬去每个分类的标题
+(1)预处理：代码在预处理文件夹下。首先运行convert.py进行分词，再执行create_data.py将标题和标签转换为序列。你也可以考虑使用create_embedding.py生成词向量  
+(2)分类模型:可以直接运行对应的模型文件。对于层次模型，你需要分别训练三个层次对应的模型，最后进行层次分类  
+(3)爬虫:执行爬虫文件夹下面的try_colab.py就可以从京东上爬去每个分类的标题  
 
-模型的效果和对比(在50w数据集上，按4:1划分训练集和验证集,baseline)
-CNN 84.8%
-Abilstm 86.1%
-Adversarial 87.1%
-Fasttext    86.0%
-Adversarial(char)   83.8%
+模型的效果和对比(在50w数据集上，按4:1划分训练集和验证集,baseline)  
+CNN 84.8%  
+Abilstm 86.1%  
+Adversarial 87.1%  
+Fasttext    86.0%  
+Adversarial(char)   83.8%  
 
 
