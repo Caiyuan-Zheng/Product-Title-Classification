@@ -27,5 +27,5 @@ Abilstm 86.1%
 Adversarial 87.1%  
 Fasttext    86.0%  
 Adversarial(char)   83.8%  
-
+Bert 86.0%
 
